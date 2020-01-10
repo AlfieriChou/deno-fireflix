@@ -5,3 +5,7 @@
 - difference
   - symmetricDifference
   - uniqueSymmetricDifference
+
+## Object
+
+- deepMapKeys
