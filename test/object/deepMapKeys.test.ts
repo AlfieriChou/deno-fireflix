@@ -3,15 +3,15 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { deepMapKeys } from "../../mod.ts";
 
 test(function testDeepMapKeysObject() {
-    const obj = {
-      foo: '1',
-      nested: {
-        child: {
-          a: 1,
-        },
+  const obj = {
+    foo: '1',
+    nested: {
+      child: {
+        a: 1,
       },
-    };
-    const ret = deepMapKeys(obj, (key: string) => key.toUpperCase());
+    },
+  };
+  const ret = deepMapKeys(obj, (key: string) => key.toUpperCase());
   assertEquals({ FOO: '1', NESTED: { CHILD: { A: 1 } } }, ret);
 });
 
