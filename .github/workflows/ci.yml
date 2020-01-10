@@ -17,4 +17,4 @@ jobs:
         run: make format
 
       - name: Run tests
-        run: deno run --allow-read test/**/*.ts
+        run: deno run --allow-read test/test.ts
