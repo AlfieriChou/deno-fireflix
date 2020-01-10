@@ -1,0 +1,1 @@
+export { symmetricDifference, uniqueSymmetricDifference } from './array/diffence.ts'
