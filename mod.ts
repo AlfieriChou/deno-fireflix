@@ -1,2 +1,2 @@
-export { symmetricDifference, uniqueSymmetricDifference } from './array/diffence.ts'
+export { symmetricDifference, uniqueSymmetricDifference } from './array/difference.ts'
 export { deepMapKeys } from './object/deepMapKeys.ts'
