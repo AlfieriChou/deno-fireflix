@@ -1,5 +1,7 @@
 # deno-fireflix
 
+[![Build Status](https://github.com/AlfieriChou/deno-fireflix/workflows/ci/badge.svg?branch=master&event=push)](https://github.com/AlfieriChou/deno-fireflix/actions)
+
 ## Array
 
 - difference
