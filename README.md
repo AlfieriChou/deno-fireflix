@@ -11,7 +11,13 @@
   - intersectionWith
 - nest
 - numberGroupBy
+- orderBy
+- permutation
 
 ## Object
 
 - deepMapKeys
+- pair
+  - objectToPairs
+  - objectFromPairs
+- renameKeys
