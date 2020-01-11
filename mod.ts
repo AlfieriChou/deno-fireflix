@@ -14,3 +14,4 @@ export { permutation } from "./array/permutation.ts";
 export { deepMapKeys } from "./object/deepMapKeys.ts";
 export { objectToPairs, objectFromPairs } from "./object/pair.ts";
 export { renameKeys } from "./object/renameKeys.ts";
+export { stringPermutations } from "./string/permutation.ts";

@@ -21,3 +21,7 @@
   - objectToPairs
   - objectFromPairs
 - renameKeys
+
+## String
+
+- stringPermutations

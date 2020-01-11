@@ -8,5 +8,6 @@ import './array/permutation.test.ts';
 import './object/deepMapKeys.test.ts';
 import './object/pair.test.ts';
 import './object/renameKeys.test.ts';
+import './string/permutation.test.ts';
 
 runTests();
