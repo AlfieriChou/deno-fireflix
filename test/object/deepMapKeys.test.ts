@@ -1,6 +1,6 @@
-import { test } from "https://deno.land/std/testing/mod.ts";
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { deepMapKeys } from "../../mod.ts";
+import { test } from 'https://deno.land/std/testing/mod.ts';
+import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
+import { deepMapKeys } from '../../mod.ts';
 
 test(function testDeepMapKeysObject() {
   const obj = {

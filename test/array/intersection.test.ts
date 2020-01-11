@@ -1,8 +1,8 @@
-import { test } from "https://deno.land/std/testing/mod.ts";
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { intersection, intersectionBy, intersectionWith } from "../../mod.ts";
+import { test } from 'https://deno.land/std/testing/mod.ts';
+import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
+import { intersection, intersectionBy, intersectionWith } from '../../mod.ts';
 
-test(function testSIntersection() {
+test(function testIntersection() {
   const ret = intersection([1, 2, 3], [4, 3, 2]);
   assertEquals([2, 3], ret);
 });

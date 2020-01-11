@@ -1,3 +1,5 @@
 export { symmetricDifference, uniqueSymmetricDifference } from './array/difference.ts'
 export { intersection, intersectionBy, intersectionWith } from './array/intersection.ts'
+export { nest } from './array/nest.ts'
+export { numberGroupBy } from './array/numberGroupBy.ts'
 export { deepMapKeys } from './object/deepMapKeys.ts'
