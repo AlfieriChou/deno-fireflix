@@ -1,4 +1,4 @@
-import { test, runTests } from "https://deno.land/std/testing/mod.ts";
+import { test } from "https://deno.land/std/testing/mod.ts";
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { symmetricDifference, uniqueSymmetricDifference } from "../../mod.ts";
 
@@ -11,5 +11,3 @@ test(function testUniqueSymmetricDifference() {
   const ret = uniqueSymmetricDifference([1, 2, 2], [1, 3, 1]);
   assertEquals([2, 3], ret);
 });
-
-runTests();
