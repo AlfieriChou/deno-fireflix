@@ -1,7 +1,7 @@
 const dynamicSort = (prop: string): ((a: Object, b: Object) => number) => {
   let order: number = 1;
   let property: string;
-  if (prop.startsWith('-')) {
+  if (prop.startsWith("-")) {
     order = -1;
     property = prop.substring(1);
   } else {
@@ -20,4 +20,5 @@ const dynamicSort = (prop: string): ((a: Object, b: Object) => number) => {
   };
 };
 
-export const orderBy = (objs: Object[], property: string): Object[] => objs.sort(dynamicSort(property));
+export const orderBy = (objs: Object[], property: string): Object[] =>
+  objs.sort(dynamicSort(property));
