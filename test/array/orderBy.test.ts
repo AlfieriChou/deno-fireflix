@@ -1,6 +1,7 @@
-import { test } from 'https://deno.land/std/testing/mod.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 import { orderBy } from '../../mod.ts';
+
+const { test } = Deno
 
 interface IPeople {
   name: string
@@ -34,12 +35,12 @@ const descAgePeoples: IPeople[] = [
   { name: 'The', age: 12 },
 ];
 
-test(function testASCOrderBy() {
+test('testASCOrderBy', () => {
   const ret = orderBy(peoples, 'age')
   assertEquals(ascAgePeoples, ret);
 });
 
-test(function testDESCOrderBy() {
+test('testDESCOrderBy', () => {
   const ret = orderBy(peoples, '-age')
   assertEquals(descAgePeoples, ret);
 });

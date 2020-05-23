@@ -1,6 +1,7 @@
-import { test } from 'https://deno.land/std/testing/mod.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 import { stringPermutations } from '../../mod.ts';
+
+const { test } = Deno
 
 test(function testStringPermutations() {
   const ret1 = stringPermutations('a');

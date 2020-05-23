@@ -1,4 +1,8 @@
-const dynamicSort = (prop: string): ((a: Object, b: Object) => number) => {
+interface OrderByObject {
+  [property: string]: string | number;
+}
+
+const dynamicSort = (prop: string): ((a: OrderByObject, b: OrderByObject) => number) => {
   let order: number = 1;
   let property: string;
   if (prop.startsWith("-")) {
@@ -20,5 +24,5 @@ const dynamicSort = (prop: string): ((a: Object, b: Object) => number) => {
   };
 };
 
-export const orderBy = (objs: Object[], property: string): Object[] =>
+export const orderBy = (objs: OrderByObject[], property: string): OrderByObject[] =>
   objs.sort(dynamicSort(property));

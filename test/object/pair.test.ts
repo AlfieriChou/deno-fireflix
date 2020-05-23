@@ -1,8 +1,9 @@
-import { test } from 'https://deno.land/std/testing/mod.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 import { objectToPairs, objectFromPairs } from '../../mod.ts';
 
-test(function testObjectToPairs() {
+const { test } = Deno
+
+test('testObjectToPairs', () => {
   const testObject = { a: 1, b: 2 };
   const ret = objectToPairs(testObject);
   assertEquals([['a', 1], ['b', 2]], ret);

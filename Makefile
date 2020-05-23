@@ -1,6 +1,6 @@
 ################################################################
 format:
-	@deno --allow-read --allow-write https://deno.land/std/prettier/main.ts
+	@deno run --allow-read --allow-write https://deno.land/std/prettier/main.ts
 
 ci:
-	@deno --allow-read test/test.ts
+	@deno run --allow-read test/**/*.ts

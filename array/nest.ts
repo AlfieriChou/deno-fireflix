@@ -9,6 +9,6 @@ interface NestObject {
   children: NestObject[] | []
 }
 
-export const nest = (items: BaseObject[], id: number | null = null, link: string = 'parentId'): NestObject[] => items
-  .filter(item => item[link] === id)
+export const nest = (items: BaseObject[], id: number | null = null): NestObject[] => items
+  .filter(item => item['parentId'] && item['parentId'] === id)
   .map(item => ({ ...item, children: nest(items, item.id) }));

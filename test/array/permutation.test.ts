@@ -1,8 +1,9 @@
-import { test } from 'https://deno.land/std/testing/mod.ts';
 import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
 import { permutation } from '../../mod.ts';
 
-test(function testPermutation() {
+const { test } = Deno
+
+test('testPermutation', () => {
   const testArray: Object[][] = [
     [{ a: '1' }, { a: '2' }, { a: '3' }],
     [{ b: '4' }, { b: '5' }],
