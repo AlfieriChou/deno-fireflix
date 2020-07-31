@@ -4,7 +4,7 @@ interface PairObject {
 
 export const objectToPairs = (
   obj: PairObject,
-): (string | number)[][] => Object.keys(obj).map(k => [k, obj[k]]);
+): (string | number)[][] => Object.keys(obj).map((k) => [k, obj[k]]);
 
 export const objectFromPairs = (
   arr: (string | number)[][],

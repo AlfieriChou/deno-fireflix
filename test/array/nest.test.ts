@@ -1,9 +1,9 @@
-import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
-import { nest } from '../../mod.ts';
+import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { nest } from "../../mod.ts";
 
-const { test } = Deno
+const { test } = Deno;
 
-test('testNest', () => {
+test("testNest", () => {
   const datas = [
     { id: 1, parentId: null },
     { id: 2, parentId: 1 },
